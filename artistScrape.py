@@ -35,6 +35,8 @@ dirtree=os.listdir()
 names=[x.replace('Anti.','Anti-') for x in dirtree]
 # Clean the folder names of periods and special characters.
 names=[x.replace('.',' ') for x in names]
+# Replace "The" at the end of directory names and append it to beginning.
+names=[x.replace(', The','') for x in names]
 # Strip any leading / trailing whitespace.
 names=[x.strip(' ') for x in names]
 

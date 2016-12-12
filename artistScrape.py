@@ -7,7 +7,7 @@ import urllib
 # Set wd to directory containing yaml file.
 os.chdir("lastFM_srape")
 
-# Funtion to load API keys from yaml file.
+# Function to load API keys from yaml file.
 def load_secrets():
     secrets_file="pylast.yaml"
     if os.path.isfile(secrets_file):
